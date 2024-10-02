@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Partnership Opportunities - AI-Powered Home Healthcare</title>
+    <title>The MedApplication: AI-Powered Home Healthcare</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body, html {
@@ -19,18 +19,18 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 10px;
             flex-grow: 1;
         }
         header {
             background: linear-gradient(90deg, #1a5f7a, #2c3e50);
             color: white;
-            padding: 20px 0;
+            padding: 10px 0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.25em;
             text-align: center;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
@@ -44,7 +44,7 @@
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 10px 10px;
             margin: 5px;
             border-radius: 20px;
             transition: all 0.3s ease;
@@ -53,14 +53,15 @@
         nav a:hover {
             background-color: rgba(255,255,255,0.2);
         }
-        .hero, .features, .contact-form {
+        .hero {
             background: white;
             border-radius: 20px;
-            padding: 40px;
-            margin-top: 40px;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: center;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
-        .hero h2, .contact-form h3 {
+        .hero h2 {
             color: #1a5f7a;
             font-size: 2em;
             margin-bottom: 20px;
@@ -68,54 +69,55 @@
         .hero p {
             color: #666;
             font-size: 1.1em;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(90deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
         }
         .features {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
+            margin-top: 20px;
         }
         .feature {
-            width: 45%;
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            width: calc(30.333% - 20px);
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-10px);
         }
         .feature h3 {
             color: #1a5f7a;
             font-size: 1.5em;
             margin-bottom: 15px;
         }
-        .feature ul {
+        .feature p {
             color: #666;
-            padding-left: 20px;
         }
-        .form-group {
+        .feature-icon {
+            font-size: 3em;
             margin-bottom: 20px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            color: #1a5f7a;
-            font-weight: bold;
-        }
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-family: 'Poppins', sans-serif;
-        }
-        .submit-button {
-            background: linear-gradient(90deg, #1a5f7a, #2c3e50);
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 25px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        .submit-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            color: #60a3bc;
         }
         footer {
             background-color: #1a5f7a;
@@ -140,22 +142,22 @@
             h1 {
                 font-size: 2em;
             }
-            .hero h2, .contact-form h3 {
+            .hero h2 {
                 font-size: 1.5em;
             }
             .hero p {
                 font-size: 1em;
             }
+            .feature {
+                width: 100%;
+            }
             nav a {
                 display: block;
                 margin: 10px 0;
             }
-            .features {
-                flex-direction: column;
-            }
-            .feature {
-                width: 100%;
-                margin-bottom: 20px;
+            .cta-button {
+                display: block;
+                margin: 20px auto;
             }
         }
     </style>
@@ -163,7 +165,7 @@
 <body>
     <header>
         <div class="container">
-            <h1>Partnership Opportunities</h1>
+            <h1>MedApplication:  AI-Powered Healthcare, Delivered at Home</h1>
             <nav>
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
@@ -174,53 +176,27 @@
     </header>
     <main class="container">
         <section class="hero">
-            <h2>Elevating Home Healthcare Through Strategic Partnership</h2>
-            <p>At MedApplication, we recognize the critical role that home healthcare delivery companies play in providing compassionate, patient-centered care. Our goal is to forge meaningful partnerships with organizations that have certified doctors and registered nurses (RNs) on staff, enabling us to collaboratively enhance the quality of care delivered to patients in their homes.</p>
+            <h2>We're looking for Medical Partners to help revolutionize patient care using AI-driven home healthcare delivery systems</h2>
+            <p>Our cutting-edge platform brings advanced, personalized care directly to patients' doorsteps, transforming the way healthcare is delivered and experienced, with no added costs to our Partners.</p>
+<p>We invite home healthcare delivery companies with certified doctors and registered nurses to explore partnership opportunities with us. Together, we can enhance the standard of care and expand the reach of your services.</p>
+            <a href="partnership.html" class="cta-button">Become a Partner</a>
         </section>
         <section class="features">
             <div class="feature">
-                <h3>As a Partner, You'll:</h3>
-                <ul>
-                    <li>Gain a competitive edge in the rapidly evolving home healthcare market</li>
-                    <li>Expand service offerings and increase client reach</li>
-                    <li>Influence the development of AI-driven home care technologies</li>
-                    <li>Be part of a movement that's improving lives through personalized, home-delivered care</li>
-                    <li>Enhance the patient experience through improved communication and engagement tools</li>
-                </ul>
+                <div class="feature-icon">🏠</div>
+                <h3>Innovative Technology Solutions</h3>
+                <p>We provide cutting-edge AI tools designed to streamline operations, enhance patient engagement, and facilitate seamless communication between caregivers and patients</p>
             </div>
             <div class="feature">
-                <h3>Our Ideal Partners:</h3>
-                <ul>
-                    <li>Forward-thinking home healthcare providers</li>
-                    <li>Innovative medical professionals interested in growing their home-based care</li>
-                    <li>Employing certified doctors and registered nurses committed to high standards of care</li>
-                    <li>Shares a vision of a patient-centered approach to healthcare</li>
-                    <li>Open to leveraging partnership opportunities for mutual growth and improvement</li>
-                    <li>Willing to work with technology experts  deploying AI for remote care solutions</li>
-                </ul>
+                <div class="feature-icon">📊</div>
+                <h3>Data-Driven, Real-time Insights</h3>
+                <p>Our analytics empower healthcare providers to make informed decisions, optimize care plans, and improve overall service delivery</p>
             </div>
-        </section>
-        <section class="contact-form">
-            <h3>Let's Explore the Possibilities?</h3>
-            <form action="https://formspree.io/f/your_form_id" method="POST">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="company">Company:</label>
-                    <input type="text" id="company" name="company">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button type="submit" class="submit-button">Submit</button>
-            </form>
+            <div class="feature">
+                <div class="feature-icon">⚙️</div>
+                <h3>Add extensive service offerings at no additional expense</h3>
+                <p>We offer resources and guidance to help organizations significantly increase sales with additional service offerings, while improving operational excellence</p>
+            </div>
         </section>
     </main>
     <footer>
