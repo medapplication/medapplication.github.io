@@ -1,0 +1,18 @@
+If github pages go blank, do this:
+
+Go to github directory:
+C:\Users\quail\Documents\0-Robert\0-Devi\0-Kelly Project\Github Medapplication>
+
+In admin command window:
+git fetch origin
+
+git status
+
+git pull origin main
+
+git add .
+
+git commit -m "Sync with remote repository"
+
+git push origin main
+
