@@ -19,14 +19,17 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 10px;
             flex-grow: 1;
         }
         header {
             background: linear-gradient(90deg, #1a5f7a, #2c3e50);
             color: white;
-            padding: 20px 0;
+            padding: 10px 0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         h1 {
             margin: 0;
@@ -36,19 +39,21 @@
         }
         nav {
             background-color: rgba(255,255,255,0.1);
-            padding: 10px 0;
+            padding: 1px 10px;
             margin-top: 10px;
             border-radius: 30px;
-            text-align: center;
+            display: inline-flex;
+            justify-content: center;
+            align-self: center;
         }
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
-            margin: 5px;
+            padding: 5px 10px;
+            margin: 2px;
             border-radius: 20px;
             transition: all 0.3s ease;
-            display: inline-block;
+            white-space: nowrap;
         }
         nav a:hover {
             background-color: rgba(255,255,255,0.2);
@@ -56,8 +61,8 @@
         .about-content, .vision-mission {
             background: white;
             border-radius: 20px;
-            padding: 40px;
-            margin-top: 40px;
+            padding: 20px;
+            margin-top: 20px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
         .about-content h2, .vision-mission h3 {
@@ -99,24 +104,24 @@
             .about-content p, .vision-mission p {
                 font-size: 1em;
             }
+            nav {
+                flex-direction: column;
+            }
             nav a {
-                display: block;
-                margin: 10px 0;
+                margin: 5px 0;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>About Us</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="partnership.html">Partnership</a>
-                <a href="contact.html">Contact Us</a>
-            </nav>
-        </div>
+        <h1>About Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="partnership.html">Partnership</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
     </header>
     <main class="container">
         <section class="about-content">
@@ -139,7 +144,7 @@
             <a href="contact.html">Contact Us</a>
         </div>
         <div class="copyright">
-            Copyright © 2024 AI Home Delivery Inc.
+            Copyright © 2024 MedApplication Inc.
         </div>
     </footer>
 </body>
