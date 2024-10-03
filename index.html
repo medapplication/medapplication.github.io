@@ -36,19 +36,23 @@
         }
         nav {
             background-color: rgba(255,255,255,0.1);
-            padding: 10px 0;
+            padding: 1px 0;
             margin-top: 10px;
             border-radius: 30px;
             text-align: center;
+            max-width: fit-content; /* This will make the nav only as wide as its content */
+            display: flex; /* This will help with alignment */
+             justify-content: center; /* This centers the items horizontally */
         }
         nav a {
             color: white;
             text-decoration: none;
-            padding: 5px 5px;
-            margin: 5px;
+            padding: 5px 10px; /* Increase horizontal padding slightly */
+            margin: 2px; /* Reduce margin to bring items closer */
             border-radius: 20px;
             transition: all 0.3s ease;
             display: inline-block;
+            white-space: nowrap; /* Prevents text from wrapping */
         }
         nav a:hover {
             background-color: rgba(255,255,255,0.2);
