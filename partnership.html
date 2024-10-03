@@ -27,9 +27,6 @@
             color: white;
             padding: 10px 0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
         h1 {
             margin: 0;
@@ -39,12 +36,13 @@
         }
         nav {
             background-color: rgba(255,255,255,0.1);
-            padding: 1px 10px;
+            padding: 5px;
             margin-top: 10px;
             border-radius: 30px;
-            display: inline-flex;
+            display: flex;
             justify-content: center;
-            align-self: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
         }
         nav a {
             color: white;
@@ -54,6 +52,7 @@
             border-radius: 20px;
             transition: all 0.3s ease;
             white-space: nowrap;
+            font-size: 0.9em;
         }
         nav a:hover {
             background-color: rgba(255,255,255,0.2);
@@ -133,18 +132,22 @@
         .footer-nav {
             font-size: 0.9em;
             margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         .footer-nav a {
             color: white;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 5px;
+            white-space: nowrap;
         }
         .copyright {
             font-size: 0.8em;
         }
         @media (max-width: 768px) {
             h1 {
-                font-size: 2em;
+                font-size: 1.8em;
             }
             .hero h2, .contact-form h3 {
                 font-size: 1.5em;
@@ -153,10 +156,11 @@
                 font-size: 1em;
             }
             nav {
-                flex-direction: column;
+                padding: 5px 0;
             }
             nav a {
-                margin: 5px 0;
+                padding: 5px 8px;
+                font-size: 0.8em;
             }
             .features {
                 flex-direction: column;
@@ -164,6 +168,12 @@
             .feature {
                 width: 100%;
                 margin-bottom: 20px;
+            }
+            .footer-nav {
+                font-size: 0.8em;
+            }
+            .footer-nav a {
+                margin: 3px;
             }
         }
     </style>
@@ -195,19 +205,19 @@
                 </ul>
             </div>
             <div class="feature">
-                <h3>Our Ideal Partners Are:</h3>
+                <h3>Our Ideal Partners:</h3>
                 <ul>
                     <li>Forward-thinking home healthcare providers</li>
                     <li>Innovative medical professionals interested in growing their home-based care</li>
                     <li>Employing certified doctors and registered nurses committed to high standards of care</li>
-                    <li>Evisioning a patient-centered approach to healthcare</li>
+                    <li>Shares a vision of a patient-centered approach to healthcare</li>
                     <li>Open to leveraging partnership opportunities for mutual growth and improvement</li>
                     <li>Willing to work with technology experts deploying AI for remote care solutions</li>
                 </ul>
             </div>
         </section>
         <section class="contact-form">
-            <h3>Let's Explore the Possibilities?</h3>
+            <h3>Let's Explore the Possibilities</h3>
             <form action="https://formspree.io/f/xwpeggge" method="POST">
                 <div class="form-group">
                     <label for="name">Name:</label>
@@ -231,9 +241,9 @@
     </main>
     <footer>
         <div class="footer-nav">
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Us</a> |
-            <a href="partnership.html">Partnership</a> |
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="partnership.html">Partnership</a>
             <a href="contact.html">Contact Us</a>
         </div>
         <div class="copyright">
