@@ -27,9 +27,6 @@
             color: white;
             padding: 10px 0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
         h1 {
             margin: 0;
@@ -39,12 +36,13 @@
         }
         nav {
             background-color: rgba(255,255,255,0.1);
-            padding: 1px 10px;
+            padding: 5px;
             margin-top: 10px;
             border-radius: 30px;
-            display: inline-flex;
+            display: flex;
             justify-content: center;
-            align-self: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
         }
         nav a {
             color: white;
@@ -54,6 +52,7 @@
             border-radius: 20px;
             transition: all 0.3s ease;
             white-space: nowrap;
+            font-size: 0.9em;
         }
         nav a:hover {
             background-color: rgba(255,255,255,0.2);
@@ -86,18 +85,22 @@
         .footer-nav {
             font-size: 0.9em;
             margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         .footer-nav a {
             color: white;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 5px;
+            white-space: nowrap;
         }
         .copyright {
             font-size: 0.8em;
         }
         @media (max-width: 768px) {
             h1 {
-                font-size: 2em;
+                font-size: 1.8em;
             }
             .about-content h2, .vision-mission h3 {
                 font-size: 1.5em;
@@ -106,10 +109,17 @@
                 font-size: 1em;
             }
             nav {
-                flex-direction: column;
+                padding: 5px 0;
             }
             nav a {
-                margin: 5px 0;
+                padding: 5px 8px;
+                font-size: 0.8em;
+            }
+            .footer-nav {
+                font-size: 0.8em;
+            }
+            .footer-nav a {
+                margin: 3px;
             }
         }
     </style>
@@ -139,9 +149,9 @@
     </main>
     <footer>
         <div class="footer-nav">
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Us</a> |
-            <a href="partnership.html">Partnership</a> |
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="partnership.html">Partnership</a>
             <a href="contact.html">Contact Us</a>
         </div>
         <div class="copyright">
