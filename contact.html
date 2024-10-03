@@ -19,14 +19,17 @@
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 10px;
             flex-grow: 1;
         }
         header {
             background: linear-gradient(90deg, #1a5f7a, #2c3e50);
             color: white;
-            padding: 20px 0;
+            padding: 10px 0;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         h1 {
             margin: 0;
@@ -36,19 +39,21 @@
         }
         nav {
             background-color: rgba(255,255,255,0.1);
-            padding: 10px 0;
+            padding: 1px 10px;
             margin-top: 10px;
             border-radius: 30px;
-            text-align: center;
+            display: inline-flex;
+            justify-content: center;
+            align-self: center;
         }
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
-            margin: 5px;
+            padding: 5px 10px;
+            margin: 2px;
             border-radius: 20px;
             transition: all 0.3s ease;
-            display: inline-block;
+            white-space: nowrap;
         }
         nav a:hover {
             background-color: rgba(255,255,255,0.2);
@@ -56,8 +61,8 @@
         .hero, .contact-info, .contact-form {
             background: white;
             border-radius: 20px;
-            padding: 40px;
-            margin-top: 40px;
+            padding: 20px;
+            margin-top: 20px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
         .hero h2, .contact-info h3, .contact-form h3 {
@@ -140,9 +145,11 @@
             .hero p {
                 font-size: 1em;
             }
+            nav {
+                flex-direction: column;
+            }
             nav a {
-                display: block;
-                margin: 10px 0;
+                margin: 5px 0;
             }
             .contact-method {
                 flex-direction: column;
@@ -156,28 +163,24 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Contact Us</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="partnership.html">Partnership</a>
-                <a href="contact.html">Contact Us</a>
-            </nav>
-        </div>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="partnership.html">Partnership</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
     </header>
     <main class="container">
         <section class="hero">
             <h2>Get in Touch</h2>
             <p>We're here to answer your questions and discuss how a Partnership with us can benefit your company.</p>
         </section>
-
         <section class="contact-info">
             <h3>Contact Information</h3>
             <div class="contact-method">
                 <span class="contact-icon">✉️</span>
                 <a href="mailto:medapplication.ai@gmail.com" style="text-decoration: underline; color: blue;">medapplication.ai@gmail.com</a>
-
             </div>
         </section>
         <section class="contact-form">
